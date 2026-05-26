@@ -1,0 +1,688 @@
+[data]
+    Version="3.10"
+
+; Names of the disks Setup can prompt for.
+[disks]
+    1 =., "S3 Flat Model Driver Disk",disk2
+
+[display]
+;
+D608B   = 1:s3vsnv.drv, "S3 964 1.41B5  640x480   256 colors","100,96,96", 1:vgacolor.2gr, 1:vgalogo.lgo, 1:vdds3vsn.386, 1:s3911grb.3gr,, 1:vgalogo.rle, D0608
+D615B   = 1:s3vsnv.drv, "S3 964 1.41B5  640x480   32K colors","100,96,96", 1:vgacolor.2gr, 1:vgalogo.lgo, 1:vdds3vsn.386, 1:s3911grb.3gr,, 1:vgalogo.rle, D0615
+D616B   = 1:s3vsnv.drv, "S3 964 1.41B5  640x480   64K colors","100,96,96", 1:vgacolor.2gr, 1:vgalogo.lgo, 1:vdds3vsn.386, 1:s3911grb.3gr,, 1:vgalogo.rle, D0616
+D632B   = 1:s3vsnv.drv, "S3 964 1.41B5  640x480 16.7M colors","100,96,96", 1:vgacolor.2gr, 1:vgalogo.lgo, 1:vdds3vsn.386, 1:s3911grb.3gr,, 1:vgalogo.rle, D0632
+;
+;DL804  = 1:s3vsnv4.drv, "S3 964 1.41B5  800x600    16 colors LF","100,120,120", 1:vgacolor.2gr, 1:vgalogo.lgo, 1:vdds3vsn.386, 1:s3911grb.3gr,, 1:vgalogo.rle, D804L
+;DS804  = 1:s3vsnv4.drv, "S3 964 1.41B5  800x600    16 colors SF","100,96,96", 1:vgacolor.2gr, 1:vgalogo.lgo, 1:vdds3vsn.386, 1:s3911grb.3gr,, 1:vgalogo.rle, D804S
+DL808B  = 1:s3vsnv.drv, "S3 964 1.41B5  800x600   256 colors LF","100,120,120", 1:vgacolor.2gr, 1:vgalogo.lgo, 1:vdds3vsn.386, 1:s3911grb.3gr,, 1:vgalogo.rle, D808L
+DS808B  = 1:s3vsnv.drv, "S3 964 1.41B5  800x600   256 colors SF","100,96,96", 1:vgacolor.2gr, 1:vgalogo.lgo, 1:vdds3vsn.386, 1:s3911grb.3gr,, 1:vgalogo.rle, D808S
+DL815B  = 1:s3vsnv.drv, "S3 964 1.41B5  800x600   32K colors LF","100,120,120", 1:vgacolor.2gr, 1:vgalogo.lgo, 1:vdds3vsn.386, 1:s3911grb.3gr,, 1:vgalogo.rle, D815L
+DS815B  = 1:s3vsnv.drv, "S3 964 1.41B5  800x600   32K colors SF","100,96,96", 1:vgacolor.2gr, 1:vgalogo.lgo, 1:vdds3vsn.386, 1:s3911grb.3gr,, 1:vgalogo.rle, D815S
+DL816B  = 1:s3vsnv.drv, "S3 964 1.41B5  800x600   64K colors LF","100,120,120", 1:vgacolor.2gr, 1:vgalogo.lgo, 1:vdds3vsn.386, 1:s3911grb.3gr,, 1:vgalogo.rle, D816L
+DS816B  = 1:s3vsnv.drv, "S3 964 1.41B5  800x600   64K colors SF","100,96,96", 1:vgacolor.2gr, 1:vgalogo.lgo, 1:vdds3vsn.386, 1:s3911grb.3gr,, 1:vgalogo.rle, D816S
+DL832B  = 1:s3vsnv.drv, "S3 964 1.41B5  800x600 16.7M colors LF","100,120,120", 1:vgacolor.2gr, 1:vgalogo.lgo, 1:vdds3vsn.386, 1:s3911grb.3gr,, 1:vgalogo.rle, D832L
+DS832B  = 1:s3vsnv.drv, "S3 964 1.41B5  800x600 16.7M colors SF","100,96,96", 1:vgacolor.2gr, 1:vgalogo.lgo, 1:vdds3vsn.386, 1:s3911grb.3gr,, 1:vgalogo.rle, D832S
+;
+;DL1004 = 1:s3vsnv4.drv, "S3 964 1.41B5 1024x768    16 colors LF","100,120,120", 1:vgacolor.2gr, 1:vgalogo.lgo, 1:vdds3vsn.386, 1:s3911grb.3gr,, 1:vgalogo.rle, D104L
+;DS1004 = 1:s3vsnv4.drv, "S3 964 1.41B5 1024x768    16 colors SF","100,96,96", 1:vgacolor.2gr, 1:vgalogo.lgo, 1:vdds3vsn.386, 1:s3911grb.3gr,, 1:vgalogo.rle, D104S
+DL1008B = 1:s3vsnv.drv, "S3 964 1.41B5 1024x768   256 colors LF","100,120,120", 1:vgacolor.2gr, 1:vgalogo.lgo, 1:vdds3vsn.386, 1:s3911grb.3gr,, 1:vgalogo.rle, D108L
+DS1008B = 1:s3vsnv.drv, "S3 964 1.41B5 1024x768   256 colors SF","100,96,96", 1:vgacolor.2gr, 1:vgalogo.lgo, 1:vdds3vsn.386, 1:s3911grb.3gr,, 1:vgalogo.rle, D108S
+DL1015B = 1:s3vsnv.drv, "S3 964 1.41B5 1024x768   32K colors LF","100,120,120", 1:vgacolor.2gr, 1:vgalogo.lgo, 1:vdds3vsn.386, 1:s3911grb.3gr,, 1:vgalogo.rle, D115L
+DS1015B = 1:s3vsnv.drv, "S3 964 1.41B5 1024x768   32K colors SF","100,96,96", 1:vgacolor.2gr, 1:vgalogo.lgo, 1:vdds3vsn.386, 1:s3911grb.3gr,, 1:vgalogo.rle, D115S
+DL1016B = 1:s3vsnv.drv, "S3 964 1.41B5 1024x768   64K colors LF","100,120,120", 1:vgacolor.2gr, 1:vgalogo.lgo, 1:vdds3vsn.386, 1:s3911grb.3gr,, 1:vgalogo.rle, D116L
+DS1016B = 1:s3vsnv.drv, "S3 964 1.41B5 1024x768   64K colors SF","100,96,96", 1:vgacolor.2gr, 1:vgalogo.lgo, 1:vdds3vsn.386, 1:s3911grb.3gr,, 1:vgalogo.rle, D116S
+DL1032B = 1:s3vsnv.drv, "S3 964 1.41B5 1024x768 16.7M colors LF","100,120,120", 1:vgacolor.2gr, 1:vgalogo.lgo, 1:vdds3vsn.386, 1:s3911grb.3gr,, 1:vgalogo.rle, D132L
+DS1032B = 1:s3vsnv.drv, "S3 964 1.41B5 1024x768 16.7M colors SF","100,96,96", 1:vgacolor.2gr, 1:vgalogo.lgo, 1:vdds3vsn.386, 1:s3911grb.3gr,, 1:vgalogo.rle, D132S
+;
+DL1108B = 1:s3vsnv.drv, "S3 964 1.41B5 1152x864   256 colors LF","100,120,120", 1:vgacolor.2gr, 1:vgalogo.lgo, 1:vdds3vsn.386, 1:s3911grb.3gr,, 1:vgalogo.rle, D118L
+DS1108B = 1:s3vsnv.drv, "S3 964 1.41B5 1152x864   256 colors SF","100,96,96", 1:vgacolor.2gr, 1:vgalogo.lgo, 1:vdds3vsn.386, 1:s3911grb.3gr,, 1:vgalogo.rle, D118S
+;
+DL1204 = 1:s3vsnv4.drv, "S3 964 1.41B5 1280x1024   16 colors LF","100,120,120", 1:vgacolor.2gr, 1:vgalogo.lgo, 1:vdds3vsn.386, 1:s3911grb.3gr,, 1:vgalogo.rle, D204L
+DS1204 = 1:s3vsnv4.drv, "S3 964 1.41B5 1280x1024   16 colors SF","100,96,96", 1:vgacolor.2gr, 1:vgalogo.lgo, 1:vdds3vsn.386, 1:s3911grb.3gr,, 1:vgalogo.rle, D204S
+DL1208B = 1:s3vsnv.drv, "S3 964 1.41B5 1280x1024  256 colors LF","100,120,120", 1:vgacolor.2gr, 1:vgalogo.lgo, 1:vdds3vsn.386, 1:s3911grb.3gr,, 1:vgalogo.rle, D208L
+DS1208B = 1:s3vsnv.drv, "S3 964 1.41B5 1280x1024  256 colors SF","100,96,96", 1:vgacolor.2gr, 1:vgalogo.lgo, 1:vdds3vsn.386, 1:s3911grb.3gr,, 1:vgalogo.rle, D208S
+DL1215B = 1:s3vsnv.drv, "S3 964 1.41B5 1280x1024  32K colors LF","100,120,120", 1:vgacolor.2gr, 1:vgalogo.lgo, 1:vdds3vsn.386, 1:s3911grb.3gr,, 1:vgalogo.rle, D215L
+DS1215B = 1:s3vsnv.drv, "S3 964 1.41B5 1280x1024  32K colors SF","100,96,96", 1:vgacolor.2gr, 1:vgalogo.lgo, 1:vdds3vsn.386, 1:s3911grb.3gr,, 1:vgalogo.rle, D215S
+DL1216B = 1:s3vsnv.drv, "S3 964 1.41B5 1280x1024  64K colors LF","100,120,120", 1:vgacolor.2gr, 1:vgalogo.lgo, 1:vdds3vsn.386, 1:s3911grb.3gr,, 1:vgalogo.rle, D216L
+DS1216B = 1:s3vsnv.drv, "S3 964 1.41B5 1280x1024  64K colors SF","100,96,96", 1:vgacolor.2gr, 1:vgalogo.lgo, 1:vdds3vsn.386, 1:s3911grb.3gr,, 1:vgalogo.rle, D216S
+DL1232B = 1:s3vsnv.drv, "S3 964 1.41B5 1280x1024 16.7M colors LF","100,120,120", 1:vgacolor.2gr, 1:vgalogo.lgo, 1:vdds3vsn.386, 1:s3911grb.3gr,, 1:vgalogo.rle, D232L
+DS1232B = 1:s3vsnv.drv, "S3 964 1.41B5 1280x1024 16.7M colors SF","100,96,96", 1:vgacolor.2gr, 1:vgalogo.lgo, 1:vdds3vsn.386, 1:s3911grb.3gr,, 1:vgalogo.rle, D232S
+;
+DL1608B = 1:s3vsnv.drv, "S3 964 1.41B5 1600x1200  256 colors LF","100,120,120", 1:vgacolor.2gr, 1:vgalogo.lgo, 1:vdds3vsn.386, 1:s3911grb.3gr,, 1:vgalogo.rle, D608L
+DS1608B = 1:s3vsnv.drv, "S3 964 1.41B5 1600x1200  256 colors SF","100,96,96", 1:vgacolor.2gr, 1:vgalogo.lgo, 1:vdds3vsn.386, 1:s3911grb.3gr,, 1:vgalogo.rle, D608S
+DL1615B = 1:s3vsnv.drv, "S3 964 1.41B5 1600x1200  32K colors LF","100,120,120", 1:vgacolor.2gr, 1:vgalogo.lgo, 1:vdds3vsn.386, 1:s3911grb.3gr,, 1:vgalogo.rle, D615L
+DS1615B = 1:s3vsnv.drv, "S3 964 1.41B5 1600x1200  32K colors SF","100,96,96", 1:vgacolor.2gr, 1:vgalogo.lgo, 1:vdds3vsn.386, 1:s3911grb.3gr,, 1:vgalogo.rle, D615S
+DL1616B = 1:s3vsnv.drv, "S3 964 1.41B5 1600x1200  64K colors LF","100,120,120", 1:vgacolor.2gr, 1:vgalogo.lgo, 1:vdds3vsn.386, 1:s3911grb.3gr,, 1:vgalogo.rle, D616L
+DS1616B = 1:s3vsnv.drv, "S3 964 1.41B5 1600x1200  64K colors SF","100,96,96", 1:vgacolor.2gr, 1:vgalogo.lgo, 1:vdds3vsn.386, 1:s3911grb.3gr,, 1:vgalogo.rle, D616S
+;DL1632B = 1:s3vsnv.drv, "S3 964 1.41B5 1600x1200 16.7M colors LF","100,120,120", 1:vgacolor.2gr, 1:vgalogo.lgo, 1:vdds3vsn.386, 1:s3911grb.3gr,, 1:vgalogo.rle, D632L
+;DS1632B = 1:s3vsnv.drv, "S3 964 1.41B5 1600x1200 16.7M colors SF","100,96,96", 1:vgacolor.2gr, 1:vgalogo.lgo, 1:vdds3vsn.386, 1:s3911grb.3gr,, 1:vgalogo.rle, D632S
+;
+[D0608]
+,,system.ini, DISPLAY, "dac-type",          ""
+,,system.ini, DISPLAY, "aperture-base",     ""
+,,system.ini, DISPLAY, "polygon-support",   "polygon-support=on"
+,,system.ini, DISPLAY, "ellipse-support",   "ellipse-support=on"
+,,system.ini, DISPLAY, "font-caching",      ""
+,,system.ini, DISPLAY, "scache",            "scache=on"
+,,system.ini, DISPLAY, "textrmw",           "textrmw=0"
+,,system.ini, DISPLAY, "fastmmio",          "fastmmio=on"
+,,system.ini, DISPLAY, "screen-size=",      "screen-size=640"
+,,system.ini, DISPLAY, "color-format=",     "color-format=8"
+,,system.ini, DISPLAY, "dpi",               "dpi=96 "
+
+[D0615]
+,,system.ini, DISPLAY, "dac-type",          ""
+,,system.ini, DISPLAY, "aperture-base",     ""
+,,system.ini, DISPLAY, "polygon-support",   "polygon-support=on"
+,,system.ini, DISPLAY, "ellipse-support",   "ellipse-support=on"
+,,system.ini, DISPLAY, "font-caching",      ""
+,,system.ini, DISPLAY, "scache",            "scache=on"
+,,system.ini, DISPLAY, "textrmw",           "textrmw=0"
+,,system.ini, DISPLAY, "fastmmio",          "fastmmio=on"
+,,system.ini, DISPLAY, "screen-size=",      "screen-size=640"
+,,system.ini, DISPLAY, "color-format=",     "color-format=15"
+,,system.ini, DISPLAY, "dpi",               "dpi=96 "
+,,progman.ini,Settings,"display.drv=",      ""
+
+[D0616]
+,,system.ini, DISPLAY, "dac-type",          ""
+,,system.ini, DISPLAY, "aperture-base",     ""
+,,system.ini, DISPLAY, "polygon-support",   "polygon-support=on"
+,,system.ini, DISPLAY, "ellipse-support",   "ellipse-support=on"
+,,system.ini, DISPLAY, "font-caching",      ""
+,,system.ini, DISPLAY, "scache",            "scache=on"
+,,system.ini, DISPLAY, "textrmw",           "textrmw=0"
+,,system.ini, DISPLAY, "fastmmio",          "fastmmio=on"
+,,system.ini, DISPLAY, "screen-size=",      "screen-size=640"
+,,system.ini, DISPLAY, "color-format=",     "color-format=16"
+,,system.ini, DISPLAY, "dpi",               "dpi=96 "
+,,progman.ini,Settings,"display.drv=",      ""
+
+[D0632]
+,,system.ini, DISPLAY, "dac-type",          ""
+,,system.ini, DISPLAY, "aperture-base",     ""
+,,system.ini, DISPLAY, "polygon-support",   "polygon-support=on"
+,,system.ini, DISPLAY, "ellipse-support",   "ellipse-support=on"
+,,system.ini, DISPLAY, "font-caching",      ""
+,,system.ini, DISPLAY, "scache",            "scache=on"
+,,system.ini, DISPLAY, "textrmw",           "textrmw=0"
+,,system.ini, DISPLAY, "fastmmio",          "fastmmio=on"
+,,system.ini, DISPLAY, "screen-size=",      "screen-size=640"
+,,system.ini, DISPLAY, "color-format=",     "color-format=32"
+,,system.ini, DISPLAY, "dpi",               "dpi=96 "
+
+[D804L]
+,,system.ini, DISPLAY, "dac-type",          ""
+,,system.ini, DISPLAY, "aperture-base",     ""
+,,system.ini, DISPLAY, "polygon-support",   "polygon-support=on"
+,,system.ini, DISPLAY, "ellipse-support",   "ellipse-support=on"
+,,system.ini, DISPLAY, "font-caching",      ""
+,,system.ini, DISPLAY, "scache",            "scache=on"
+,,system.ini, DISPLAY, "textrmw",           "textrmw=0"
+,,system.ini, DISPLAY, "fastmmio",          "fastmmio=on"
+,,system.ini, DISPLAY, "screen-size=",      "screen-size=800"
+,,system.ini, DISPLAY, "color-format=",     "color-format=4"
+,,system.ini, DISPLAY, "dpi",               "dpi=120"
+
+[D804S]
+,,system.ini, DISPLAY, "dac-type",          ""
+,,system.ini, DISPLAY, "aperture-base",     ""
+,,system.ini, DISPLAY, "polygon-support",   "polygon-support=on"
+,,system.ini, DISPLAY, "ellipse-support",   "ellipse-support=on"
+,,system.ini, DISPLAY, "font-caching",      ""
+,,system.ini, DISPLAY, "scache",            "scache=on"
+,,system.ini, DISPLAY, "textrmw",           "textrmw=0"
+,,system.ini, DISPLAY, "fastmmio",          "fastmmio=on"
+,,system.ini, DISPLAY, "screen-size=",      "screen-size=800"
+,,system.ini, DISPLAY, "color-format=",     "color-format=4"
+,,system.ini, DISPLAY, "dpi",               "dpi=96 "
+
+[D808L]
+,,system.ini, DISPLAY, "dac-type",          ""
+,,system.ini, DISPLAY, "aperture-base",     ""
+,,system.ini, DISPLAY, "polygon-support",   "polygon-support=on"
+,,system.ini, DISPLAY, "ellipse-support",   "ellipse-support=on"
+,,system.ini, DISPLAY, "font-caching",      ""
+,,system.ini, DISPLAY, "scache",            "scache=on"
+,,system.ini, DISPLAY, "textrmw",           "textrmw=0"
+,,system.ini, DISPLAY, "fastmmio",          "fastmmio=on"
+,,system.ini, DISPLAY, "screen-size=",      "screen-size=800"
+,,system.ini, DISPLAY, "color-format=",     "color-format=8"
+,,system.ini, DISPLAY, "dpi",               "dpi=120"
+
+[D808S]
+,,system.ini, DISPLAY, "dac-type",          ""
+,,system.ini, DISPLAY, "aperture-base",     ""
+,,system.ini, DISPLAY, "polygon-support",   "polygon-support=on"
+,,system.ini, DISPLAY, "ellipse-support",   "ellipse-support=on"
+,,system.ini, DISPLAY, "font-caching",      ""
+,,system.ini, DISPLAY, "scache",            "scache=on"
+,,system.ini, DISPLAY, "textrmw",           "textrmw=0"
+,,system.ini, DISPLAY, "fastmmio",          "fastmmio=on"
+,,system.ini, DISPLAY, "screen-size=",      "screen-size=800"
+,,system.ini, DISPLAY, "color-format=",     "color-format=8"
+,,system.ini, DISPLAY, "dpi",               "dpi=96 "
+
+[D815L]
+,,system.ini, DISPLAY, "dac-type",          ""
+,,system.ini, DISPLAY, "aperture-base",     ""
+,,system.ini, DISPLAY, "polygon-support",   "polygon-support=on"
+,,system.ini, DISPLAY, "ellipse-support",   "ellipse-support=on"
+,,system.ini, DISPLAY, "font-caching",      ""
+,,system.ini, DISPLAY, "scache",            "scache=on"
+,,system.ini, DISPLAY, "textrmw",           "textrmw=0"
+,,system.ini, DISPLAY, "fastmmio",          "fastmmio=on"
+,,system.ini, DISPLAY, "screen-size=",      "screen-size=800"
+,,system.ini, DISPLAY, "color-format=",     "color-format=15"
+,,system.ini, DISPLAY, "dpi",               "dpi=120"
+,,progman.ini,Settings,"display.drv=",      ""
+
+[D815S]
+,,system.ini, DISPLAY, "dac-type",          ""
+,,system.ini, DISPLAY, "aperture-base",     ""
+,,system.ini, DISPLAY, "polygon-support",   "polygon-support=on"
+,,system.ini, DISPLAY, "ellipse-support",   "ellipse-support=on"
+,,system.ini, DISPLAY, "font-caching",      ""
+,,system.ini, DISPLAY, "scache",            "scache=on"
+,,system.ini, DISPLAY, "textrmw",           "textrmw=0"
+,,system.ini, DISPLAY, "fastmmio",          "fastmmio=on"
+,,system.ini, DISPLAY, "screen-size=",      "screen-size=800"
+,,system.ini, DISPLAY, "color-format=",     "color-format=15"
+,,system.ini, DISPLAY, "dpi",               "dpi=96 "
+,,progman.ini,Settings,"display.drv=",      ""
+
+[D816L]
+,,system.ini, DISPLAY, "dac-type",          ""
+,,system.ini, DISPLAY, "aperture-base",     ""
+,,system.ini, DISPLAY, "polygon-support",   "polygon-support=on"
+,,system.ini, DISPLAY, "ellipse-support",   "ellipse-support=on"
+,,system.ini, DISPLAY, "font-caching",      ""
+,,system.ini, DISPLAY, "scache",            "scache=on"
+,,system.ini, DISPLAY, "textrmw",           "textrmw=0"
+,,system.ini, DISPLAY, "fastmmio",          "fastmmio=on"
+,,system.ini, DISPLAY, "screen-size=",      "screen-size=800"
+,,system.ini, DISPLAY, "color-format=",     "color-format=16"
+,,system.ini, DISPLAY, "dpi",               "dpi=120"
+,,progman.ini,Settings,"display.drv=",      ""
+
+[D816S]
+,,system.ini, DISPLAY, "dac-type",          ""
+,,system.ini, DISPLAY, "aperture-base",     ""
+,,system.ini, DISPLAY, "polygon-support",   "polygon-support=on"
+,,system.ini, DISPLAY, "ellipse-support",   "ellipse-support=on"
+,,system.ini, DISPLAY, "font-caching",      ""
+,,system.ini, DISPLAY, "scache",            "scache=on"
+,,system.ini, DISPLAY, "textrmw",           "textrmw=0"
+,,system.ini, DISPLAY, "fastmmio",          "fastmmio=on"
+,,system.ini, DISPLAY, "screen-size=",      "screen-size=800"
+,,system.ini, DISPLAY, "color-format=",     "color-format=16"
+,,system.ini, DISPLAY, "dpi",               "dpi=96 "
+,,progman.ini,Settings,"display.drv=",      ""
+
+[D832L]
+,,system.ini, DISPLAY, "dac-type",          ""
+,,system.ini, DISPLAY, "aperture-base",     ""
+,,system.ini, DISPLAY, "polygon-support",   "polygon-support=on"
+,,system.ini, DISPLAY, "ellipse-support",   "ellipse-support=on"
+,,system.ini, DISPLAY, "font-caching",      ""
+,,system.ini, DISPLAY, "scache",            "scache=on"
+,,system.ini, DISPLAY, "textrmw",           "textrmw=0"
+,,system.ini, DISPLAY, "fastmmio",          "fastmmio=on"
+,,system.ini, DISPLAY, "screen-size=",      "screen-size=800"
+,,system.ini, DISPLAY, "color-format=",     "color-format=32"
+,,system.ini, DISPLAY, "dpi",               "dpi=120"
+
+[D832S]
+,,system.ini, DISPLAY, "dac-type",          ""
+,,system.ini, DISPLAY, "aperture-base",     ""
+,,system.ini, DISPLAY, "polygon-support",   "polygon-support=on"
+,,system.ini, DISPLAY, "ellipse-support",   "ellipse-support=on"
+,,system.ini, DISPLAY, "font-caching",      ""
+,,system.ini, DISPLAY, "scache",            "scache=on"
+,,system.ini, DISPLAY, "textrmw",           "textrmw=0"
+,,system.ini, DISPLAY, "fastmmio",          "fastmmio=on"
+,,system.ini, DISPLAY, "screen-size=",      "screen-size=800"
+,,system.ini, DISPLAY, "color-format=",     "color-format=32"
+,,system.ini, DISPLAY, "dpi",               "dpi=96 "
+
+[D104L]
+,,system.ini, DISPLAY, "dac-type",          ""
+,,system.ini, DISPLAY, "aperture-base",     ""
+,,system.ini, DISPLAY, "polygon-support",   "polygon-support=on"
+,,system.ini, DISPLAY, "ellipse-support",   "ellipse-support=on"
+,,system.ini, DISPLAY, "font-caching",      ""
+,,system.ini, DISPLAY, "scache",            "scache=on"
+,,system.ini, DISPLAY, "textrmw",           "textrmw=0"
+,,system.ini, DISPLAY, "fastmmio",          "fastmmio=on"
+,,system.ini, DISPLAY, "screen-size=",      "screen-size=1024"
+,,system.ini, DISPLAY, "color-format=",     "color-format=4"
+,,system.ini, DISPLAY, "dpi",               "dpi=120"
+
+[D104S]
+,,system.ini, DISPLAY, "dac-type",          ""
+,,system.ini, DISPLAY, "aperture-base",     ""
+,,system.ini, DISPLAY, "polygon-support",   "polygon-support=on"
+,,system.ini, DISPLAY, "ellipse-support",   "ellipse-support=on"
+,,system.ini, DISPLAY, "font-caching",      ""
+,,system.ini, DISPLAY, "scache",            "scache=on"
+,,system.ini, DISPLAY, "textrmw",           "textrmw=0"
+,,system.ini, DISPLAY, "fastmmio",          "fastmmio=on"
+,,system.ini, DISPLAY, "screen-size=",      "screen-size=1024"
+,,system.ini, DISPLAY, "color-format=",     "color-format=4"
+,,system.ini, DISPLAY, "dpi",               "dpi=96 "
+
+[D108L]
+,,system.ini, DISPLAY, "dac-type",          ""
+,,system.ini, DISPLAY, "aperture-base",     ""
+,,system.ini, DISPLAY, "polygon-support",   "polygon-support=on"
+,,system.ini, DISPLAY, "ellipse-support",   "ellipse-support=on"
+,,system.ini, DISPLAY, "font-caching",      ""
+,,system.ini, DISPLAY, "scache",            "scache=on"
+,,system.ini, DISPLAY, "textrmw",           "textrmw=0"
+,,system.ini, DISPLAY, "fastmmio",          "fastmmio=on"
+,,system.ini, DISPLAY, "screen-size=",      "screen-size=1024"
+,,system.ini, DISPLAY, "color-format=",     "color-format=8"
+,,system.ini, DISPLAY, "dpi",               "dpi=120"
+
+[D108S]
+,,system.ini, DISPLAY, "dac-type",          ""
+,,system.ini, DISPLAY, "aperture-base",     ""
+,,system.ini, DISPLAY, "polygon-support",   "polygon-support=on"
+,,system.ini, DISPLAY, "ellipse-support",   "ellipse-support=on"
+,,system.ini, DISPLAY, "font-caching",      ""
+,,system.ini, DISPLAY, "scache",            "scache=on"
+,,system.ini, DISPLAY, "textrmw",           "textrmw=0"
+,,system.ini, DISPLAY, "fastmmio",          "fastmmio=on"
+,,system.ini, DISPLAY, "screen-size=",      "screen-size=1024"
+,,system.ini, DISPLAY, "color-format=",     "color-format=8"
+,,system.ini, DISPLAY, "dpi",               "dpi=96 "
+
+[D115L]
+,,system.ini, DISPLAY, "dac-type",          ""
+,,system.ini, DISPLAY, "aperture-base",     ""
+,,system.ini, DISPLAY, "polygon-support",   "polygon-support=on"
+,,system.ini, DISPLAY, "ellipse-support",   "ellipse-support=on"
+,,system.ini, DISPLAY, "font-caching",      ""
+,,system.ini, DISPLAY, "scache",            "scache=on"
+,,system.ini, DISPLAY, "textrmw",           "textrmw=0"
+,,system.ini, DISPLAY, "fastmmio",          "fastmmio=on"
+,,system.ini, DISPLAY, "screen-size=",      "screen-size=1024"
+,,system.ini, DISPLAY, "color-format=",     "color-format=15"
+,,system.ini, DISPLAY, "dpi",               "dpi=120"
+,,progman.ini,Settings,"display.drv=",      ""
+
+[D115S]
+,,system.ini, DISPLAY, "dac-type",          ""
+,,system.ini, DISPLAY, "aperture-base",     ""
+,,system.ini, DISPLAY, "polygon-support",   "polygon-support=on"
+,,system.ini, DISPLAY, "ellipse-support",   "ellipse-support=on"
+,,system.ini, DISPLAY, "font-caching",      ""
+,,system.ini, DISPLAY, "scache",            "scache=on"
+,,system.ini, DISPLAY, "textrmw",           "textrmw=0"
+,,system.ini, DISPLAY, "fastmmio",          "fastmmio=on"
+,,system.ini, DISPLAY, "screen-size=",      "screen-size=1024"
+,,system.ini, DISPLAY, "color-format=",     "color-format=15"
+,,system.ini, DISPLAY, "dpi",               "dpi=96"
+,,progman.ini,Settings,"display.drv=",      ""
+
+[D116L]
+,,system.ini, DISPLAY, "dac-type",          ""
+,,system.ini, DISPLAY, "aperture-base",     ""
+,,system.ini, DISPLAY, "polygon-support",   "polygon-support=on"
+,,system.ini, DISPLAY, "ellipse-support",   "ellipse-support=on"
+,,system.ini, DISPLAY, "font-caching",      ""
+,,system.ini, DISPLAY, "scache",            "scache=on"
+,,system.ini, DISPLAY, "textrmw",           "textrmw=0"
+,,system.ini, DISPLAY, "fastmmio",          "fastmmio=on"
+,,system.ini, DISPLAY, "screen-size=",      "screen-size=1024"
+,,system.ini, DISPLAY, "color-format=",     "color-format=16"
+,,system.ini, DISPLAY, "dpi",               "dpi=120"
+,,progman.ini,Settings,"display.drv=",      ""
+
+[D116S]
+,,system.ini, DISPLAY, "dac-type",          ""
+,,system.ini, DISPLAY, "aperture-base",     ""
+,,system.ini, DISPLAY, "polygon-support",   "polygon-support=on"
+,,system.ini, DISPLAY, "ellipse-support",   "ellipse-support=on"
+,,system.ini, DISPLAY, "font-caching",      ""
+,,system.ini, DISPLAY, "scache",            "scache=on"
+,,system.ini, DISPLAY, "textrmw",           "textrmw=0"
+,,system.ini, DISPLAY, "fastmmio",          "fastmmio=on"
+,,system.ini, DISPLAY, "screen-size=",      "screen-size=1024"
+,,system.ini, DISPLAY, "color-format=",     "color-format=16"
+,,system.ini, DISPLAY, "dpi",               "dpi=96"
+,,progman.ini,Settings,"display.drv=",      ""
+
+[D132L]
+,,system.ini, DISPLAY, "dac-type",          ""
+,,system.ini, DISPLAY, "aperture-base",     ""
+,,system.ini, DISPLAY, "polygon-support",   "polygon-support=on"
+,,system.ini, DISPLAY, "ellipse-support",   "ellipse-support=on"
+,,system.ini, DISPLAY, "font-caching",      ""
+,,system.ini, DISPLAY, "scache",            "scache=on"
+,,system.ini, DISPLAY, "textrmw",           "textrmw=0"
+,,system.ini, DISPLAY, "fastmmio",          "fastmmio=on"
+,,system.ini, DISPLAY, "screen-size=",      "screen-size=1024"
+,,system.ini, DISPLAY, "color-format=",     "color-format=32"
+,,system.ini, DISPLAY, "dpi",               "dpi=120"
+
+[D132S]
+,,system.ini, DISPLAY, "dac-type",          ""
+,,system.ini, DISPLAY, "aperture-base",     ""
+,,system.ini, DISPLAY, "polygon-support",   "polygon-support=on"
+,,system.ini, DISPLAY, "ellipse-support",   "ellipse-support=on"
+,,system.ini, DISPLAY, "font-caching",      ""
+,,system.ini, DISPLAY, "scache",            "scache=on"
+,,system.ini, DISPLAY, "textrmw",           "textrmw=0"
+,,system.ini, DISPLAY, "fastmmio",          "fastmmio=on"
+,,system.ini, DISPLAY, "screen-size=",      "screen-size=1024"
+,,system.ini, DISPLAY, "color-format=",     "color-format=32"
+,,system.ini, DISPLAY, "dpi",               "dpi=96"
+
+[D118L]
+,,system.ini, DISPLAY, "dac-type",          ""
+,,system.ini, DISPLAY, "aperture-base",     ""
+,,system.ini, DISPLAY, "polygon-support",   "polygon-support=on"
+,,system.ini, DISPLAY, "ellipse-support",   "ellipse-support=on"
+,,system.ini, DISPLAY, "font-caching",      ""
+,,system.ini, DISPLAY, "scache",            "scache=on"
+,,system.ini, DISPLAY, "textrmw",           "textrmw=0"
+,,system.ini, DISPLAY, "fastmmio",          "fastmmio=on"
+,,system.ini, DISPLAY, "screen-size=",      "screen-size=1152"
+,,system.ini, DISPLAY, "color-format=",     "color-format=8"
+,,system.ini, DISPLAY, "dpi",               "dpi=120"
+
+[D118S]
+,,system.ini, DISPLAY, "dac-type",          ""
+,,system.ini, DISPLAY, "aperture-base",     ""
+,,system.ini, DISPLAY, "polygon-support",   "polygon-support=on"
+,,system.ini, DISPLAY, "ellipse-support",   "ellipse-support=on"
+,,system.ini, DISPLAY, "font-caching",      ""
+,,system.ini, DISPLAY, "scache",            "scache=on"
+,,system.ini, DISPLAY, "textrmw",           "textrmw=0"
+,,system.ini, DISPLAY, "fastmmio",          "fastmmio=on"
+,,system.ini, DISPLAY, "screen-size=",      "screen-size=1152"
+,,system.ini, DISPLAY, "color-format=",     "color-format=8"
+,,system.ini, DISPLAY, "dpi",               "dpi=96"
+
+[D204L]
+,,system.ini, DISPLAY, "dac-type",          ""
+,,system.ini, DISPLAY, "aperture-base",     ""
+,,system.ini, DISPLAY, "polygon-support",   "polygon-support=on"
+,,system.ini, DISPLAY, "ellipse-support",   "ellipse-support=on"
+,,system.ini, DISPLAY, "font-caching",      ""
+,,system.ini, DISPLAY, "scache",            "scache=on"
+,,system.ini, DISPLAY, "textrmw",           "textrmw=0"
+,,system.ini, DISPLAY, "fastmmio",          "fastmmio=off"
+,,system.ini, DISPLAY, "screen-size=",      "screen-size=1280"
+,,system.ini, DISPLAY, "color-format=",     "color-format=4"
+,,system.ini, DISPLAY, "dpi",               "dpi=120"
+
+[D204S]
+,,system.ini, DISPLAY, "dac-type",          ""
+,,system.ini, DISPLAY, "aperture-base",     ""
+,,system.ini, DISPLAY, "polygon-support",   "polygon-support=on"
+,,system.ini, DISPLAY, "ellipse-support",   "ellipse-support=on"
+,,system.ini, DISPLAY, "font-caching",      ""
+,,system.ini, DISPLAY, "scache",            "scache=on"
+,,system.ini, DISPLAY, "textrmw",           "textrmw=0"
+,,system.ini, DISPLAY, "fastmmio",          "fastmmio=off"
+,,system.ini, DISPLAY, "screen-size=",      "screen-size=1280"
+,,system.ini, DISPLAY, "color-format=",     "color-format=4"
+,,system.ini, DISPLAY, "dpi",               "dpi=96"
+
+[D208L]
+,,system.ini, DISPLAY, "dac-type",          ""
+,,system.ini, DISPLAY, "aperture-base",     ""
+,,system.ini, DISPLAY, "polygon-support",   "polygon-support=on"
+,,system.ini, DISPLAY, "ellipse-support",   "ellipse-support=on"
+,,system.ini, DISPLAY, "font-caching",      ""
+,,system.ini, DISPLAY, "scache",            "scache=on"
+,,system.ini, DISPLAY, "textrmw",           "textrmw=0"
+,,system.ini, DISPLAY, "fastmmio",          "fastmmio=on"
+,,system.ini, DISPLAY, "screen-size=",      "screen-size=1280"
+,,system.ini, DISPLAY, "color-format=",     "color-format=8"
+,,system.ini, DISPLAY, "dpi",               "dpi=120"
+
+[D208S]
+,,system.ini, DISPLAY, "dac-type",          ""
+,,system.ini, DISPLAY, "aperture-base",     ""
+,,system.ini, DISPLAY, "polygon-support",   "polygon-support=on"
+,,system.ini, DISPLAY, "ellipse-support",   "ellipse-support=on"
+,,system.ini, DISPLAY, "font-caching",      ""
+,,system.ini, DISPLAY, "scache",            "scache=on"
+,,system.ini, DISPLAY, "textrmw",           "textrmw=0"
+,,system.ini, DISPLAY, "fastmmio",          "fastmmio=on"
+,,system.ini, DISPLAY, "screen-size=",      "screen-size=1280"
+,,system.ini, DISPLAY, "color-format=",     "color-format=8"
+,,system.ini, DISPLAY, "dpi",               "dpi=96"
+
+[D215L]
+,,system.ini, DISPLAY, "dac-type",          ""
+,,system.ini, DISPLAY, "aperture-base",     ""
+,,system.ini, DISPLAY, "polygon-support",   "polygon-support=on"
+,,system.ini, DISPLAY, "ellipse-support",   "ellipse-support=on"
+,,system.ini, DISPLAY, "font-caching",      ""
+,,system.ini, DISPLAY, "scache",            "scache=on"
+,,system.ini, DISPLAY, "textrmw",           "textrmw=0"
+,,system.ini, DISPLAY, "fastmmio",          "fastmmio=on"
+,,system.ini, DISPLAY, "screen-size=",      "screen-size=1280"
+,,system.ini, DISPLAY, "color-format=",     "color-format=15"
+,,system.ini, DISPLAY, "dpi",               "dpi=120"
+,,progman.ini,Settings,"display.drv=",      ""
+
+[D215S]
+,,system.ini, DISPLAY, "dac-type",          ""
+,,system.ini, DISPLAY, "aperture-base",     ""
+,,system.ini, DISPLAY, "polygon-support",   "polygon-support=on"
+,,system.ini, DISPLAY, "ellipse-support",   "ellipse-support=on"
+,,system.ini, DISPLAY, "font-caching",      ""
+,,system.ini, DISPLAY, "scache",            "scache=on"
+,,system.ini, DISPLAY, "textrmw",           "textrmw=0"
+,,system.ini, DISPLAY, "fastmmio",          "fastmmio=on"
+,,system.ini, DISPLAY, "screen-size=",      "screen-size=1280"
+,,system.ini, DISPLAY, "color-format=",     "color-format=15"
+,,system.ini, DISPLAY, "dpi",               "dpi=96"
+,,progman.ini,Settings,"display.drv=",      ""
+
+[D216L]
+,,system.ini, DISPLAY, "dac-type",          ""
+,,system.ini, DISPLAY, "aperture-base",     ""
+,,system.ini, DISPLAY, "polygon-support",   "polygon-support=on"
+,,system.ini, DISPLAY, "ellipse-support",   "ellipse-support=on"
+,,system.ini, DISPLAY, "font-caching",      ""
+,,system.ini, DISPLAY, "scache",            "scache=on"
+,,system.ini, DISPLAY, "textrmw",           "textrmw=0"
+,,system.ini, DISPLAY, "fastmmio",          "fastmmio=on"
+,,system.ini, DISPLAY, "screen-size=",      "screen-size=1280"
+,,system.ini, DISPLAY, "color-format=",     "color-format=16"
+,,system.ini, DISPLAY, "dpi",               "dpi=120"
+,,progman.ini,Settings,"display.drv=",      ""
+
+[D216S]
+,,system.ini, DISPLAY, "dac-type",          ""
+,,system.ini, DISPLAY, "aperture-base",     ""
+,,system.ini, DISPLAY, "polygon-support",   "polygon-support=on"
+,,system.ini, DISPLAY, "ellipse-support",   "ellipse-support=on"
+,,system.ini, DISPLAY, "font-caching",      ""
+,,system.ini, DISPLAY, "scache",            "scache=on"
+,,system.ini, DISPLAY, "textrmw",           "textrmw=0"
+,,system.ini, DISPLAY, "fastmmio",          "fastmmio=on"
+,,system.ini, DISPLAY, "screen-size=",      "screen-size=1280"
+,,system.ini, DISPLAY, "color-format=",     "color-format=16"
+,,system.ini, DISPLAY, "dpi",               "dpi=96"
+,,progman.ini,Settings,"display.drv=",      ""
+
+[D232L]
+,,system.ini, DISPLAY, "dac-type",          ""
+,,system.ini, DISPLAY, "aperture-base",     ""
+,,system.ini, DISPLAY, "polygon-support",   "polygon-support=on"
+,,system.ini, DISPLAY, "ellipse-support",   "ellipse-support=on"
+,,system.ini, DISPLAY, "font-caching",      ""
+,,system.ini, DISPLAY, "scache",            "scache=on"
+,,system.ini, DISPLAY, "textrmw",           "textrmw=0"
+,,system.ini, DISPLAY, "fastmmio",          "fastmmio=on"
+,,system.ini, DISPLAY, "screen-size=",      "screen-size=1280"
+,,system.ini, DISPLAY, "color-format=",     "color-format=32"
+,,system.ini, DISPLAY, "dpi",               "dpi=120"
+
+[D232S]
+,,system.ini, DISPLAY, "dac-type",          ""
+,,system.ini, DISPLAY, "aperture-base",     ""
+,,system.ini, DISPLAY, "polygon-support",   "polygon-support=on"
+,,system.ini, DISPLAY, "ellipse-support",   "ellipse-support=on"
+,,system.ini, DISPLAY, "font-caching",      ""
+,,system.ini, DISPLAY, "scache",            "scache=on"
+,,system.ini, DISPLAY, "textrmw",           "textrmw=0"
+,,system.ini, DISPLAY, "fastmmio",          "fastmmio=on"
+,,system.ini, DISPLAY, "screen-size=",      "screen-size=1280"
+,,system.ini, DISPLAY, "color-format=",     "color-format=32"
+,,system.ini, DISPLAY, "dpi",               "dpi=96"
+
+[D608L]
+,,system.ini, DISPLAY, "dac-type",          ""
+,,system.ini, DISPLAY, "aperture-base",     ""
+,,system.ini, DISPLAY, "polygon-support",   "polygon-support=on"
+,,system.ini, DISPLAY, "ellipse-support",   "ellipse-support=on"
+,,system.ini, DISPLAY, "font-caching",      ""
+,,system.ini, DISPLAY, "scache",            "scache=on"
+,,system.ini, DISPLAY, "textrmw",           "textrmw=0"
+,,system.ini, DISPLAY, "fastmmio",          "fastmmio=on"
+,,system.ini, DISPLAY, "screen-size=",      "screen-size=1600"
+,,system.ini, DISPLAY, "color-format=",     "color-format=8"
+,,system.ini, DISPLAY, "dpi",               "dpi=120"
+
+[D608S]
+,,system.ini, DISPLAY, "dac-type",          ""
+,,system.ini, DISPLAY, "aperture-base",     ""
+,,system.ini, DISPLAY, "polygon-support",   "polygon-support=on"
+,,system.ini, DISPLAY, "ellipse-support",   "ellipse-support=on"
+,,system.ini, DISPLAY, "font-caching",      ""
+,,system.ini, DISPLAY, "scache",            "scache=on"
+,,system.ini, DISPLAY, "textrmw",           "textrmw=0"
+,,system.ini, DISPLAY, "fastmmio",          "fastmmio=on"
+,,system.ini, DISPLAY, "screen-size=",      "screen-size=1600"
+,,system.ini, DISPLAY, "color-format=",     "color-format=8"
+,,system.ini, DISPLAY, "dpi",               "dpi=96"
+
+[D615L]
+,,system.ini, DISPLAY, "dac-type",          ""
+,,system.ini, DISPLAY, "aperture-base",     ""
+,,system.ini, DISPLAY, "polygon-support",   "polygon-support=on"
+,,system.ini, DISPLAY, "ellipse-support",   "ellipse-support=on"
+,,system.ini, DISPLAY, "font-caching",      ""
+,,system.ini, DISPLAY, "scache",            "scache=on"
+,,system.ini, DISPLAY, "textrmw",           "textrmw=0"
+,,system.ini, DISPLAY, "fastmmio",          "fastmmio=on"
+,,system.ini, DISPLAY, "screen-size=",      "screen-size=1600"
+,,system.ini, DISPLAY, "color-format=",     "color-format=15"
+,,system.ini, DISPLAY, "dpi",               "dpi=120"
+,,progman.ini,Settings,"display.drv=",      ""
+
+[D615S]
+,,system.ini, DISPLAY, "dac-type",          ""
+,,system.ini, DISPLAY, "aperture-base",     ""
+,,system.ini, DISPLAY, "polygon-support",   "polygon-support=on"
+,,system.ini, DISPLAY, "ellipse-support",   "ellipse-support=on"
+,,system.ini, DISPLAY, "font-caching",      ""
+,,system.ini, DISPLAY, "scache",            "scache=on"
+,,system.ini, DISPLAY, "textrmw",           "textrmw=0"
+,,system.ini, DISPLAY, "fastmmio",          "fastmmio=on"
+,,system.ini, DISPLAY, "screen-size=",      "screen-size=1600"
+,,system.ini, DISPLAY, "color-format=",     "color-format=15"
+,,system.ini, DISPLAY, "dpi",               "dpi=96"
+,,progman.ini,Settings,"display.drv=",      ""
+
+[D616L]
+,,system.ini, DISPLAY, "dac-type",          ""
+,,system.ini, DISPLAY, "aperture-base",     ""
+,,system.ini, DISPLAY, "polygon-support",   "polygon-support=on"
+,,system.ini, DISPLAY, "ellipse-support",   "ellipse-support=on"
+,,system.ini, DISPLAY, "font-caching",      ""
+,,system.ini, DISPLAY, "scache",            "scache=on"
+,,system.ini, DISPLAY, "textrmw",           "textrmw=0"
+,,system.ini, DISPLAY, "fastmmio",          "fastmmio=on"
+,,system.ini, DISPLAY, "screen-size=",      "screen-size=1600"
+,,system.ini, DISPLAY, "color-format=",     "color-format=16"
+,,system.ini, DISPLAY, "dpi",               "dpi=120"
+,,progman.ini,Settings,"display.drv=",      ""
+
+[D616S]
+,,system.ini, DISPLAY, "dac-type",          ""
+,,system.ini, DISPLAY, "aperture-base",     ""
+,,system.ini, DISPLAY, "polygon-support",   "polygon-support=on"
+,,system.ini, DISPLAY, "ellipse-support",   "ellipse-support=on"
+,,system.ini, DISPLAY, "font-caching",      ""
+,,system.ini, DISPLAY, "scache",            "scache=on"
+,,system.ini, DISPLAY, "textrmw",           "textrmw=0"
+,,system.ini, DISPLAY, "fastmmio",          "fastmmio=on"
+,,system.ini, DISPLAY, "screen-size=",      "screen-size=1600"
+,,system.ini, DISPLAY, "color-format=",     "color-format=16"
+,,system.ini, DISPLAY, "dpi",               "dpi=96"
+,,progman.ini,Settings,"display.drv=",      ""
+
+[D632L]
+,,system.ini, DISPLAY, "dac-type",          ""
+,,system.ini, DISPLAY, "aperture-base",     ""
+,,system.ini, DISPLAY, "polygon-support",   "polygon-support=on"
+,,system.ini, DISPLAY, "ellipse-support",   "ellipse-support=on"
+,,system.ini, DISPLAY, "font-caching",      ""
+,,system.ini, DISPLAY, "scache",            "scache=on"
+,,system.ini, DISPLAY, "textrmw",           "textrmw=0"
+,,system.ini, DISPLAY, "fastmmio",          "fastmmio=on"
+,,system.ini, DISPLAY, "screen-size=",      "screen-size=1600"
+,,system.ini, DISPLAY, "color-format=",     "color-format=32"
+,,system.ini, DISPLAY, "dpi",               "dpi=120"
+
+[D632S]
+,,system.ini, DISPLAY, "dac-type",          ""
+,,system.ini, DISPLAY, "aperture-base",     ""
+,,system.ini, DISPLAY, "polygon-support",   "polygon-support=on"
+,,system.ini, DISPLAY, "ellipse-support",   "ellipse-support=on"
+,,system.ini, DISPLAY, "font-caching",      ""
+,,system.ini, DISPLAY, "scache",            "scache=on"
+,,system.ini, DISPLAY, "textrmw",           "textrmw=0"
+,,system.ini, DISPLAY, "fastmmio",          "fastmmio=on"
+,,system.ini, DISPLAY, "screen-size=",      "screen-size=1600"
+,,system.ini, DISPLAY, "color-format=",     "color-format=32"
+,,system.ini, DISPLAY, "dpi",               "dpi=96"
+
+; copy these fonts depending on the 386 grabber being used
+[s3911grb.3gr]
+1:CGA40WOA.FON,1:CGA40850.FON
+1:CGA80WOA.FON,1:CGA80850.FON
+1:EGA40WOA.FON,1:EGA40850.FON
+1:EGA80WOA.FON,1:EGA80850.FON
+
+[sysfonts]
+1:vgasys.fon,"VGA (640x480) resolution System Font", "100,96,96"
+1:8514sys.fon,"8514/a (1024x768) resolution System Font", "100,120,120"
+
+[fixedfonts]
+1:vgafix.fon,"VGA (640x480) resolution Fixed System Font", "100,96,96"
+1:8514fix.fon,"8514/a (1024x768) resolution Fixed System Font",  "100,120,120"
+
+[oemfonts]
+1:vgaoem.fon,"VGA (640x480) resolution Terminal Font (USA/Europe)", "100,96,96",1
+1:8514oem.fon,"8514/a (1024x768) resolution Terminal Font (USA/Europe)", "100,120,120",1
+
+[fonts]
+   1:SSERIFE.FON, "MS Sans Serif 8,10,12,14,18,24 (VGA res)", "100,96,96"
+   1:SSERIFF.FON, "MS Sans Serif 8,10,12,14,18,24 (8514/a res)", "100,120,120"
+
+   1:COURE.FON, "Courier 10,12,15 (VGA res)", "100,96,96"
+   1:COURF.FON, "Courier 10,12,15 (8514/a res)", "100,120,120"
+
+   1:SERIFE.FON, "MS Serif 8,10,12,14,18,24 (VGA res)", "100,96,96"
+   1:SERIFF.FON, "MS Serif 8,10,12,14,18,24 (8514/a res)", "100,120,120"
+
+   1:SYMBOLE.FON, "Symbol 8,10,12,14,18,24 (VGA res)", "100,96,96"
+   1:SYMBOLF.FON, "Symbol 8,10,12,14,18,24 (8514/a res)", "100,120,120"
+
+   1:SMALLE.FON, "Small Fonts (VGA res)", "100,96,96"
+   1:SMALLF.FON, "Small Fonts (8514/a res)", "100,120,120"
+
+   1:ROMAN.FON, "Roman (Plotter)",   "CONTINUOUSSCALING"
+   1:SCRIPT.FON, "Script (Plotter)", "CONTINUOUSSCALING"
+   1:MODERN.FON, "Modern (Plotter)", "CONTINUOUSSCALING"
+
