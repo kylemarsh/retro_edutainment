@@ -34,15 +34,17 @@ installing, tuning and setting up the games themselves. you'll need:
 1. Setting up DOSBox Staging
 2. Launching a Game From the Desktop
 
-You may need to adjust the file paths in the applescript template and
-game.conf files to match your system, but hopefully that's it.
+Try running `setup.sh` from this project to set up symlinks in the places
+everything expects to find your games; otherwise you'll need to adjust the file
+paths in the applescript template and game.conf files to match your system, but
+hopefully that's it.
 
 ## Setting up DOSBox Staging
 You can download [DOSBox Staging] from their website, or install it via
 homebrew: `brew install dosbox-staging`. The global config file should be in
 your preferences directory, `~/Library/Preferences/DOSBox/dosbox-staging.conf`.
 
-Copy ~/dosbox/dosbox-staging-conf from this bundle to the global location.
+Copy `~/dosbox/dosbox-staging-conf` from this bundle to the global location.
 
 [DOSBox Staging]: https://www.dosbox-staging.org/
 
@@ -59,12 +61,13 @@ game.exe
 ```
 
 ## Tuning a Game
-I mostly asked ChatGPT or another answer engine for help here. Games like
-Treasure Galaxy run veeeery slowly with default settings, but I found
-increasing the cycles setting smoothed them up a lot (this is already in the
-game.conf for Treasure Galaxy). You may have more luck with other settings.
-There may also be tuning you can do to video/audio settings to get better
-outcomes with some games. Put those in the game.conf files.
+I mostly asked ChatGPT or another answer engine for help here. Some games
+run veeeery slowly with default settings, but I found
+increasing the cycles tended to smooth things out. Apparently this can cause
+timing issues with some of the games, so don't go overboard. You may have more
+luck with other settings. There may also be tuning you can do to video/audio
+settings to get better outcomes with some games. Put those in the game.conf
+files.
 
 ## Launching a Game From the Desktop
 You can use AppleScript to create an "application" that launches dosbox and
@@ -89,21 +92,26 @@ Open `play_dosbox_game.scpt` in the `Script Editor`. You should see the
 following:
 
 ```
-set game to "cove"
+set game to "nummunch"
 
 set homepath to POSIX path of (path to home folder)
-set dosbox to homepath & "Applications/DOSBox Staging.app/Contents/MacOS/dosbox"
-do shell script (quoted form of dosbox) & " -conf ~/dosgames/" & game & "/game.conf"
+set installpath to homepath & "dosgames/"
+--set installpath to homepath & "projects/retro_edutainment/dosgames/"
+
+--set dosbox to homepath & "Applications/DOSBox Staging.app/Contents/MacOS/dosbox"
+set dosbox to "/Applications/DOSBox Staging.app/Contents/MacOS/dosbox"
+
+do shell script (quoted form of dosbox) & " -conf " & installpath & game & "/game.conf"
 ```
 
 Make sure the `dosbox` variable actually points to the dosbox-staging
-executable on your machine (it might be in `/Applications` instead of
-`~/Applications` if you used homebrew, or somewhere else entirely if you did
-something custom), and make sure the last line actually points to the
-directory (`~/dosbox` in the example) where your games library lives.
+executable on your machine (it might be in `~/Applications` instead of
+`/Applications` if you installed it manually instead of using homebrew) , and
+make sure `installpath` actually points to the directory (`~/dosbox` in the
+example) where your games library lives, or symlink that to `~/dosgames`.
 
 Once you have everything else set up, the first line is all you need to change
-to create a launcher for any game in your library: change `cove` to the
+to create a launcher for any game in your library: change `nummunch` to the
 directory within `~/dosbox` that holds the game you want to play.
 
 Test the script by pushing the "Run the Script" button (a "play" arrow), then
@@ -116,8 +124,8 @@ game!
 If you want to use a custom icon for the game, you can create an icon set and
 tell the launcher you made to use that.
 
-First find the image you want to use (there are a seletion of them in the
-`game icons` directory in this project). If you don't have a `.icns` file,
+First find the image you want to use (an example for the example game is in the
+`game_icons` directory in this project). If you don't have a `.icns` file,
 install `image2icon` (`brew install image2icon`) and use that to create a
 `.icns` file from your image.
 
